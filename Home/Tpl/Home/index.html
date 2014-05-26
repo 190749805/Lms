@@ -1,0 +1,66 @@
+<include file="./Home/Tpl/Common/header.html"/>
+<css href="__PUBLIC__/Css/home.css" />
+<script src="__PUBLIC__/Js/home.js"></script>
+<script src="__PUBLIC__/Js/prifile.js"></script>
+<script src="__PUBLIC__/Js/viewtime.js"></script>
+<script src="__PUBLIC__/Js/changepassword.js"></script>
+<script src="__PUBLIC__/Js/cancel.js"></script>
+<script src="__PUBLIC__/Js/comment.js"></script>
+
+
+
+</head>
+                                                                                                                
+<body id="home" onload="startTime()"> 
+<h1 class="title">Laboratory Management System</h1>  
+<p id="time"><p>   
+<div class="container home-menu" id="container-mentu"> 
+<div class="panel-group home-menu" id="accordion2">
+  <div class="panel panel-default home-menu">
+    <div class="panel-heading home-menu" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne"> 
+		<a class="accordion-toggle home-a">基本信息</a> </div>
+    <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
+      <div class="panel-body">
+		<a class="home-a home-a1" id="view-prifile">查看资料</a>
+	  </div>
+	  <div class="panel-body">
+		<a class="home-a home-a1" id="change-password">修改密码</a>
+	  </div>
+    </div>
+  </div>
+  <div class="panel panel-default home-menu">
+    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+		<a class="accordion-toggle home-a">体会交流</a></div>
+    <div id="collapseTwo" class="panel-collapse collapse" style="height: 0px;">
+      <div class="panel-body">
+		<a class="home-a home-a1" id="comment">发表看法</a>
+	  </div>
+	  
+	  <div class="panel-body">
+		<a class="home-a home-a1" id="view-record">查看个人记录</a>
+	  </div>
+	  
+      <div class="panel-body">
+		<a class="home-a home-a1" id="view-impression">查看他人体会</a>
+	  </div>
+    </div>
+  </div>
+  <div class="panel panel-default  home-menu">
+    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree" id="div-a"> 
+		<a class="accordion-toggle home-a" id='cancel'>
+		<if condition="$_SESSION['username']=='' ">登录系统
+		<else />退出系统
+		</if>
+		</a> </div>
+    
+  </div>
+</div>
+ 
+</div>
+<include file="./Home/Tpl/Prifile/index.html" />
+<include file="./Home/Tpl/Changepassword/index.html" />
+<include file="./Home/Tpl/Comment/index.html"/>
+<include file="./Home/Tpl/Viewimpression/index.html"/>
+<iframe src="__APP__/Viewrecord/index" class="iframe" id="view-record-form" frameborder="0"></iframe>
+<iframe src="__APP__/Viewimp/index" class="iframe" id="view-impression-form" frameborder="0"></iframe>
+<include file="./Home/Tpl/Common/footer.html" />

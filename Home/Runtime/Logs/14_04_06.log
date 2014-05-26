@@ -1,0 +1,476 @@
+[ 2014-04-06T15:52:21+08:00 ] 0.0.0.0 /Lms/index.php/Index/login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.061004s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = '2011081156' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' ) AND ( `status` = 0 )  [ RunTime:0.001000s ]
+
+[ 2014-04-06T15:52:46+08:00 ] 0.0.0.0 /Lms/index.php/Home/select_user
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = '2011081156' )  [ RunTime:0.001000s ]
+
+[ 2014-04-06T15:53:00+08:00 ] 0.0.0.0 /Lms/index.php/Viewimp/day
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.004001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `filetime` > 1396684380 ) ORDER BY file.id desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT user.id as uid,user.name,file.filetime,file.filename,user.username,file.impression,file.id,file.number FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `filetime` > 1396684380 ) ORDER BY file.id desc LIMIT 0,8   [ RunTime:0.004001s ]
+NOTIC: [8] Undefined variable: arr E:\xampp\htdocs\Lms\Home\Lib\Action\ViewimpAction.class.php 第 20 行.
+
+[ 2014-04-06T15:53:02+08:00 ] 0.0.0.0 /Lms/index.php/Viewimp/day
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.006001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `specialty` LIKE '%php%' ) ORDER BY file.id desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT user.id as uid,user.name,file.filetime,file.filename,user.username,file.impression,file.id,file.number FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `specialty` LIKE '%php%' ) ORDER BY file.id desc LIMIT 0,8   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: arr E:\xampp\htdocs\Lms\Home\Lib\Action\ViewimpAction.class.php 第 20 行.
+
+[ 2014-04-06T15:53:05+08:00 ] 0.0.0.0 /Lms/index.php/Home/cancel
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: username E:\xampp\htdocs\Lms\Home\Lib\Action\HomeAction.class.php 第 79 行.
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\Lms\Home\Lib\Action\HomeAction.class.php 第 79 行.
+NOTIC: [8] Undefined index: name E:\xampp\htdocs\Lms\Home\Lib\Action\HomeAction.class.php 第 79 行.
+NOTIC: [8] Undefined index: status E:\xampp\htdocs\Lms\Home\Lib\Action\HomeAction.class.php 第 79 行.
+
+[ 2014-04-06T16:04:52+08:00 ] 0.0.0.0 /Lms/index.php/Index/login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.051003s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = '2011081156' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' ) AND ( `status` = 0 )  [ RunTime:0.000000s ]
+
+[ 2014-04-06T16:04:55+08:00 ] 0.0.0.0 /Lms/index.php/Home/select_user
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = '2011081156' )  [ RunTime:0.001001s ]
+
+[ 2014-04-06T16:05:10+08:00 ] 0.0.0.0 /Lms/index.php/Home/update_prifile
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007001s ]
+SQL: UPDATE `user` SET `class`='软件工程4班',`specialty`='php' WHERE ( `username` = '2011081156' ) [ RunTime:0.046002s ]
+
+[ 2014-04-06T16:05:15+08:00 ] 0.0.0.0 /Lms/index.php/Home/select_user
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = '2011081156' )  [ RunTime:0.000000s ]
+
+[ 2014-04-06T16:06:08+08:00 ] 0.0.0.0 /Lms/index.php/Viewrecord/update
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.009001s ]
+SQL: UPDATE `file` SET `impression`='这是我发表的第一篇 ，修改了' WHERE ( `id` = 1 ) [ RunTime:0.038002s ]
+
+[ 2014-04-06T16:06:23+08:00 ] 0.0.0.0 /Lms/index.php/Viewrecord/comment
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003000s ]
+SQL: SELECT `name` FROM `user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `comment` WHERE ( `name` = '熊云川' ) AND ( `cid` = 1 )  [ RunTime:0.015001s ]
+SQL: INSERT INTO `comment` (`content`,`name`,`cid`) VALUES ('哇，你写的好好啊','熊云川',1) [ RunTime:0.024001s ]
+
+[ 2014-04-06T16:06:29+08:00 ] 0.0.0.0 /Lms/index.php/Viewrecord/praise
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `praise` [ RunTime:0.025001s ]
+SQL: SELECT praise.pname FROM `praise` WHERE ( pid=1 )  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\Lms\Home\Lib\Action\ViewrecordAction.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.005001s ]
+SQL: SELECT `number` FROM `file` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `file` SET `number`=1,`id`=1 WHERE ( id=1 ) [ RunTime:0.039002s ]
+SQL: INSERT INTO `praise` (`pid`,`pname`) VALUES (1,'熊云川') [ RunTime:0.042002s ]
+
+[ 2014-04-06T16:07:06+08:00 ] 0.0.0.0 /Lms/index.php/Viewrecord/comment
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+SQL: SELECT `name` FROM `user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `comment` WHERE ( `name` = '熊云川' ) AND ( `cid` = 2 )  [ RunTime:0.000000s ]
+SQL: INSERT INTO `comment` (`content`,`name`,`cid`) VALUES ('你说的太对了','熊云川',2) [ RunTime:0.042002s ]
+
+[ 2014-04-06T16:07:15+08:00 ] 0.0.0.0 /Lms/index.php/Viewimp/day
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `filetime` > 1396685235 ) ORDER BY file.id desc LIMIT 1   [ RunTime:0.017001s ]
+SQL: SELECT user.id as uid,user.name,file.filetime,file.filename,user.username,file.impression,file.id,file.number FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `filetime` > 1396685235 ) ORDER BY file.id desc LIMIT 0,8   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.004000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='2' )  [ RunTime:0.001000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='1' )  [ RunTime:0.003001s ]
+
+[ 2014-04-06T16:07:19+08:00 ] 0.0.0.0 /Lms/index.php/Viewimp/day
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `specialty` LIKE '%php%' ) ORDER BY file.id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT user.id as uid,user.name,file.filetime,file.filename,user.username,file.impression,file.id,file.number FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `specialty` LIKE '%php%' ) ORDER BY file.id desc LIMIT 0,8   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.003000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='2' )  [ RunTime:0.001000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='1' )  [ RunTime:0.000000s ]
+
+[ 2014-04-06T16:07:24+08:00 ] 0.0.0.0 /Lms/index.php/Home/cancel
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: username E:\xampp\htdocs\Lms\Home\Lib\Action\HomeAction.class.php 第 79 行.
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\Lms\Home\Lib\Action\HomeAction.class.php 第 79 行.
+NOTIC: [8] Undefined index: name E:\xampp\htdocs\Lms\Home\Lib\Action\HomeAction.class.php 第 79 行.
+NOTIC: [8] Undefined index: status E:\xampp\htdocs\Lms\Home\Lib\Action\HomeAction.class.php 第 79 行.
+
+[ 2014-04-06T16:07:34+08:00 ] 0.0.0.0 /Lms/index.php/Home/select_user
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: username E:\xampp\htdocs\Lms\Home\Lib\Action\HomeAction.class.php 第 11 行.
+SQL: SELECT * FROM `user` WHERE ( `username` = null )  [ RunTime:0.021001s ]
+
+[ 2014-04-06T16:07:52+08:00 ] 0.0.0.0 /Lms/index.php/Viewimp/day
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `filetime` > 1396685272 ) ORDER BY file.id desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT user.id as uid,user.name,file.filetime,file.filename,user.username,file.impression,file.id,file.number FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `filetime` > 1396685272 ) ORDER BY file.id desc LIMIT 0,8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.003000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='2' )  [ RunTime:0.001000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='1' )  [ RunTime:0.001000s ]
+
+[ 2014-04-06T16:07:56+08:00 ] 0.0.0.0 /Lms/index.php/Viewrecord/comment
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: username E:\xampp\htdocs\Lms\Home\Lib\Action\ViewrecordAction.class.php 第 101 行.
+
+[ 2014-04-06T16:08:02+08:00 ] 0.0.0.0 /Lms/index.php/Viewrecord/praise
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: username E:\xampp\htdocs\Lms\Home\Lib\Action\ViewrecordAction.class.php 第 136 行.
+
+[ 2014-04-06T16:08:18+08:00 ] 0.0.0.0 /Lms/index.php/Index/login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = '2011081154' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' ) AND ( `status` = 0 )  [ RunTime:0.001000s ]
+
+[ 2014-04-06T16:08:21+08:00 ] 0.0.0.0 /Lms/index.php/Home/select_user
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = '2011081154' )  [ RunTime:0.000000s ]
+
+[ 2014-04-06T16:08:53+08:00 ] 0.0.0.0 /Lms/index.php/Viewrecord/comment
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003000s ]
+SQL: SELECT `name` FROM `user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `comment` WHERE ( `name` = '吴翔' ) AND ( `cid` = 3 )  [ RunTime:0.000000s ]
+SQL: INSERT INTO `comment` (`content`,`name`,`cid`) VALUES ('我写的哟','吴翔',3) [ RunTime:0.037002s ]
+
+[ 2014-04-06T16:08:57+08:00 ] 0.0.0.0 /Lms/index.php/Viewrecord/praise
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `praise` [ RunTime:0.007001s ]
+SQL: SELECT praise.pname FROM `praise` WHERE ( pid=3 )  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\Lms\Home\Lib\Action\ViewrecordAction.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.004000s ]
+SQL: SELECT `number` FROM `file` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `file` SET `number`=1,`id`=3 WHERE ( id=3 ) [ RunTime:0.045003s ]
+SQL: INSERT INTO `praise` (`pid`,`pname`) VALUES (3,'吴翔') [ RunTime:0.039002s ]
+
+[ 2014-04-06T16:09:02+08:00 ] 0.0.0.0 /Lms/index.php/Viewimp/day
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `filetime` > 1396685342 ) ORDER BY file.id desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT user.id as uid,user.name,file.filetime,file.filename,user.username,file.impression,file.id,file.number FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `filetime` > 1396685342 ) ORDER BY file.id desc LIMIT 0,8   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.004000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='3' )  [ RunTime:0.000000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='2' )  [ RunTime:0.001000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='1' )  [ RunTime:0.000000s ]
+
+[ 2014-04-06T16:09:25+08:00 ] 0.0.0.0 /Lms/index.php/Viewrecord/comment
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003000s ]
+SQL: SELECT `name` FROM `user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `comment` WHERE ( `name` = '吴翔' ) AND ( `cid` = 2 )  [ RunTime:0.001000s ]
+SQL: INSERT INTO `comment` (`content`,`name`,`cid`) VALUES ('我赞同你的看法','吴翔',2) [ RunTime:0.043002s ]
+
+[ 2014-04-06T16:09:33+08:00 ] 0.0.0.0 /Lms/index.php/Viewrecord/praise
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `praise` [ RunTime:0.006000s ]
+SQL: SELECT praise.pname FROM `praise` WHERE ( pid=2 )  [ RunTime:0.003000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\Lms\Home\Lib\Action\ViewrecordAction.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.004000s ]
+SQL: SELECT `number` FROM `file` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `file` SET `number`=1,`id`=2 WHERE ( id=2 ) [ RunTime:0.035002s ]
+SQL: INSERT INTO `praise` (`pid`,`pname`) VALUES (2,'吴翔') [ RunTime:0.033001s ]
+
+[ 2014-04-06T16:09:36+08:00 ] 0.0.0.0 /Lms/index.php/Viewrecord/praise
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `praise` [ RunTime:0.003000s ]
+SQL: SELECT praise.pname FROM `praise` WHERE ( pid=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.003000s ]
+SQL: SELECT `number` FROM `file` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `file` SET `number`=2,`id`=1 WHERE ( id=1 ) [ RunTime:0.040003s ]
+SQL: INSERT INTO `praise` (`pid`,`pname`) VALUES (1,'吴翔') [ RunTime:0.034002s ]
+
+[ 2014-04-06T16:09:39+08:00 ] 0.0.0.0 /Lms/index.php/Viewrecord/praise
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `praise` [ RunTime:0.003000s ]
+SQL: SELECT praise.pname FROM `praise` WHERE ( pid=1 )  [ RunTime:0.001000s ]
+
+[ 2014-04-06T16:09:45+08:00 ] 0.0.0.0 /Lms/index.php/Viewimp/day
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `specialty` LIKE '%php%' ) ORDER BY file.id desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT user.id as uid,user.name,file.filetime,file.filename,user.username,file.impression,file.id,file.number FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `specialty` LIKE '%php%' ) ORDER BY file.id desc LIMIT 0,8   [ RunTime:0.027002s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.003000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='3' )  [ RunTime:0.001000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='2' )  [ RunTime:0.000000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='1' )  [ RunTime:0.000000s ]
+
+[ 2014-04-06T16:09:53+08:00 ] 0.0.0.0 /Lms/index.php/Home/cancel
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: username E:\xampp\htdocs\Lms\Home\Lib\Action\HomeAction.class.php 第 79 行.
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\Lms\Home\Lib\Action\HomeAction.class.php 第 79 行.
+NOTIC: [8] Undefined index: name E:\xampp\htdocs\Lms\Home\Lib\Action\HomeAction.class.php 第 79 行.
+NOTIC: [8] Undefined index: status E:\xampp\htdocs\Lms\Home\Lib\Action\HomeAction.class.php 第 79 行.
+
+[ 2014-04-06T16:10:13+08:00 ] 0.0.0.0 /Lms/index.php/Index/login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'dxy' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' ) AND ( `status` = 1 )  [ RunTime:0.001000s ]
+
+[ 2014-04-06T16:10:16+08:00 ] 0.0.0.0 /Lms/index.php/Home/select_user
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'dxy' )  [ RunTime:0.000000s ]
+
+[ 2014-04-06T16:10:43+08:00 ] 0.0.0.0 /Lms/index.php/Thome/add_student
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `user` WHERE ( username=2011081156 )  [ RunTime:0.023002s ]
+
+[ 2014-04-06T16:10:59+08:00 ] 0.0.0.0 /Lms/index.php/Thome/add_student
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `user` WHERE ( username=1234567890 )  [ RunTime:0.001000s ]
+SQL: INSERT INTO `user` (`class`,`specialty`,`username`,`name`,`password`) VALUES ('','java','1234567890','陈艳','e807f1fcf82d132f9bb018ca6738a19f') [ RunTime:0.052003s ]
+
+[ 2014-04-06T16:11:04+08:00 ] 0.0.0.0 /Lms/index.php/Thome/select_student
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE ( status=0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `user` WHERE ( status=0 ) LIMIT 0,10   [ RunTime:0.000000s ]
+
+[ 2014-04-06T16:11:15+08:00 ] 0.0.0.0 /Lms/index.php/Viewimp/day
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `filetime` > 1396685475 ) ORDER BY file.id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT user.id as uid,user.name,file.filetime,file.filename,user.username,file.impression,file.id,file.number FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `filetime` > 1396685475 ) ORDER BY file.id desc LIMIT 0,8   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.004001s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='3' )  [ RunTime:0.001000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='2' )  [ RunTime:0.000000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='1' )  [ RunTime:0.000000s ]
+
+[ 2014-04-06T16:11:22+08:00 ] 0.0.0.0 /Lms/index.php/Viewimp/day
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `specialty` LIKE '%php%' ) ORDER BY file.id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT user.id as uid,user.name,file.filetime,file.filename,user.username,file.impression,file.id,file.number FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `specialty` LIKE '%php%' ) ORDER BY file.id desc LIMIT 0,8   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.003001s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='3' )  [ RunTime:0.001000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='2' )  [ RunTime:0.000000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='1' )  [ RunTime:0.001000s ]
+
+[ 2014-04-06T16:11:25+08:00 ] 0.0.0.0 /Lms/index.php/Home/cancel
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: username E:\xampp\htdocs\Lms\Home\Lib\Action\HomeAction.class.php 第 79 行.
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\Lms\Home\Lib\Action\HomeAction.class.php 第 79 行.
+NOTIC: [8] Undefined index: name E:\xampp\htdocs\Lms\Home\Lib\Action\HomeAction.class.php 第 79 行.
+NOTIC: [8] Undefined index: status E:\xampp\htdocs\Lms\Home\Lib\Action\HomeAction.class.php 第 79 行.
+
+[ 2014-04-06T16:11:43+08:00 ] 0.0.0.0 /Lms/index.php/Index/login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = '1234567890' ) AND ( `password` = 'e807f1fcf82d132f9bb018ca6738a19f' ) AND ( `status` = 0 )  [ RunTime:0.001000s ]
+
+[ 2014-04-06T16:11:48+08:00 ] 0.0.0.0 /Lms/index.php/Home/select_user
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = '1234567890' )  [ RunTime:0.001000s ]
+
+[ 2014-04-06T16:12:19+08:00 ] 0.0.0.0 /Lms/index.php/Viewrecord/comment
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007001s ]
+SQL: SELECT `name` FROM `user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `comment` WHERE ( `name` = '陈艳' ) AND ( `cid` = 4 )  [ RunTime:0.000000s ]
+SQL: INSERT INTO `comment` (`content`,`name`,`cid`) VALUES ('哈哈哈哈哈','陈艳',4) [ RunTime:0.180010s ]
+
+[ 2014-04-06T16:12:26+08:00 ] 0.0.0.0 /Lms/index.php/Viewimp/day
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `filetime` > 1396685546 ) ORDER BY file.id desc LIMIT 1   [ RunTime:0.002001s ]
+SQL: SELECT user.id as uid,user.name,file.filetime,file.filename,user.username,file.impression,file.id,file.number FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `filetime` > 1396685546 ) ORDER BY file.id desc LIMIT 0,8   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.003000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='4' )  [ RunTime:0.001000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='3' )  [ RunTime:0.000000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='2' )  [ RunTime:0.000000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='1' )  [ RunTime:0.000000s ]
+
+[ 2014-04-06T16:12:40+08:00 ] 0.0.0.0 /Lms/index.php/Viewrecord/comment
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+SQL: SELECT `name` FROM `user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `comment` WHERE ( `name` = '陈艳' ) AND ( `cid` = 2 )  [ RunTime:0.000000s ]
+SQL: INSERT INTO `comment` (`content`,`name`,`cid`) VALUES ('说的的太好了','陈艳',2) [ RunTime:0.039002s ]
+
+[ 2014-04-06T16:12:44+08:00 ] 0.0.0.0 /Lms/index.php/Viewrecord/praise
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `praise` [ RunTime:0.006000s ]
+SQL: SELECT praise.pname FROM `praise` WHERE ( pid=2 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.005000s ]
+SQL: SELECT `number` FROM `file` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `file` SET `number`=2,`id`=2 WHERE ( id=2 ) [ RunTime:0.035002s ]
+SQL: INSERT INTO `praise` (`pid`,`pname`) VALUES (2,'陈艳') [ RunTime:0.034002s ]
+
+[ 2014-04-06T16:12:47+08:00 ] 0.0.0.0 /Lms/index.php/Viewrecord/praise
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `praise` [ RunTime:0.004000s ]
+SQL: SELECT praise.pname FROM `praise` WHERE ( pid=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.006001s ]
+SQL: SELECT `number` FROM `file` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `file` SET `number`=3,`id`=1 WHERE ( id=1 ) [ RunTime:0.047002s ]
+SQL: INSERT INTO `praise` (`pid`,`pname`) VALUES (1,'陈艳') [ RunTime:0.037002s ]
+
+[ 2014-04-06T16:12:50+08:00 ] 0.0.0.0 /Lms/index.php/Viewrecord/praise
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `praise` [ RunTime:0.004001s ]
+SQL: SELECT praise.pname FROM `praise` WHERE ( pid=2 )  [ RunTime:0.000000s ]
+
+[ 2014-04-06T16:12:57+08:00 ] 0.0.0.0 /Lms/index.php/Viewimp/day
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.007000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `specialty` LIKE '%php%' ) ORDER BY file.id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT user.id as uid,user.name,file.filetime,file.filename,user.username,file.impression,file.id,file.number FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `specialty` LIKE '%php%' ) ORDER BY file.id desc LIMIT 0,8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.004001s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='3' )  [ RunTime:0.001000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='2' )  [ RunTime:0.001000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='1' )  [ RunTime:0.001000s ]
+
+[ 2014-04-06T16:13:03+08:00 ] 0.0.0.0 /Lms/index.php/Viewimp/day
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `specialty` LIKE '%java%' ) ORDER BY file.id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT user.id as uid,user.name,file.filetime,file.filename,user.username,file.impression,file.id,file.number FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `specialty` LIKE '%java%' ) ORDER BY file.id desc LIMIT 0,8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.006000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='4' )  [ RunTime:0.000000s ]
+
+[ 2014-04-06T16:13:07+08:00 ] 0.0.0.0 /Lms/index.php/Home/select_user
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = '1234567890' )  [ RunTime:0.000000s ]
+
+[ 2014-04-06T16:13:13+08:00 ] 0.0.0.0 /Lms/index.php/Viewimp/day
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.003001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `specialty` LIKE '%php%' ) ORDER BY file.id desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT user.id as uid,user.name,file.filetime,file.filename,user.username,file.impression,file.id,file.number FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `specialty` LIKE '%php%' ) ORDER BY file.id desc LIMIT 0,8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.005000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='3' )  [ RunTime:0.001000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='2' )  [ RunTime:0.000000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='1' )  [ RunTime:0.000000s ]
+
+[ 2014-04-06T16:13:16+08:00 ] 0.0.0.0 /Lms/index.php/Viewimp/day
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `specialty` LIKE '%java%' ) ORDER BY file.id desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT user.id as uid,user.name,file.filetime,file.filename,user.username,file.impression,file.id,file.number FROM `file` LEFT JOIN user on file.fid=user.id WHERE ( `specialty` LIKE '%java%' ) ORDER BY file.id desc LIMIT 0,8   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.003000s ]
+SQL: SELECT `content`,`name` FROM `comment` WHERE ( 1=1 AND cid='4' )  [ RunTime:0.000000s ]
+

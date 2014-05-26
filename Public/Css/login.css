@@ -1,0 +1,13 @@
+#login{
+	background:#cbcbcb;
+}
+.title{
+	font-family: cursive;
+font-size: 48px;
+font-style: italic;
+font-weight: bolder;
+font-variant: normal;
+}
+.form-input{
+	width:200px !important;
+}

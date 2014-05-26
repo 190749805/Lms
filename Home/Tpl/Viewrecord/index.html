@@ -1,0 +1,43 @@
+<include file="./Home/Tpl/Common/header.html"/>
+<css href="__PUBLIC__/Css/home.css" />
+<script src="__PUBLIC__/Js/home.js"></script>
+<script src="__PUBLIC__/Js/prifile.js"></script>
+<script src="__PUBLIC__/Js/viewtime.js"></script>
+<script src="__PUBLIC__/Js/changepassword.js"></script>
+<script src="__PUBLIC__/Js/cancel.js"></script>
+<script src="__PUBLIC__/Js/comment.js"></script>
+<script src="__PUBLIC__/Js/record.js"></script>
+
+</head>
+<body>
+<div class="container" id="div-view">  	
+	<div class="form-horizontal" role="form" id="iframe-div">
+	<ol>
+			<volist name="list" id="vo">
+			<div class="color-div"><li>{$vo.name}&nbsp;&nbsp;&nbsp;&nbsp;{$vo.filetime}&nbsp;&nbsp;<br/>
+			{$vo.impression}<br/>{$vo.filename}-{$vo.username} <br/></div>
+			评论:<br/><ol><span class="span-p{$vo.id}"></span>
+			<volist name="vo['comment']" id="comment">
+				
+					<li><span class="span-p">{$comment.content}---{$comment.name}</span><br/>
+			</li></volist></ol><br/>
+			<div id="div-input-view{$vo.id}" style="display:none;">
+				<input type="text" id="input-{$vo.id}" class="form-control input-view " placeholder="请输入你的看法">
+				<button class="btn btn-success a-a2" name="{$vo.id}" id="view-que{$vo.id}">确认</button>	
+				<br/>
+			</div>
+			<a name="{$vo.id}" class="a-praise"id="fsda">赞</a><span id="span-id{$vo.id}">{$vo.number}</span><br/>
+			<a class="btn " href="__URL__/download?id={$vo.id}" value="{$vo.id}" id="a1">下载</a>
+			<a class="btn " href="__URL__/select_impression?id={$vo.id}" id="a2">修改</a>
+			<a class="btn   a-a3" href="#" name="{$vo.id}" id="a3">评论</a>
+			<a class="btn " href="__URL__/remove?id={$vo.id}" id="a4">删除</a>
+			</li>
+			</volist><br/>
+		{$page}
+	</ol>
+	</div>
+	
+	
+</div>
+
+<include file="./Home/Tpl/Common/footer.html" />

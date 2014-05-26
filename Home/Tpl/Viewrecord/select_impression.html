@@ -1,0 +1,28 @@
+<include file="./Home/Tpl/Common/header.html"/>
+<css href="__PUBLIC__/Css/home.css" />
+<script src="__PUBLIC__/Js/record.js"></script>
+</head>
+<body>
+<div id="update-div">
+	
+		<div class="control-group">
+          <div class="controls">
+            <button class="btn btn-danger" id="b10">返回</button>
+          </div>
+        </div>
+		
+	<hidden value="{$id}" id="hidden1"></hidden>
+		<div class="controls">
+            <div class="textarea-div">
+                  <textarea type="" class="" cols="120" rows="18" id="textarea-div">{$content} </textarea>
+            </div>
+        </div>
+		  
+		<div class="control-group">
+          <div class="controls">
+            <button class="btn btn-success" id="b9">确认修改</button>
+          </div>
+        </div>
+		
+</div>
+<include file="./Home/Tpl/Common/footer.html" />

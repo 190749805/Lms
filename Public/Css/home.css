@@ -1,0 +1,111 @@
+.title{
+	font-family: cursive;
+	font-size: 48px;
+	font-style: italic;
+	font-weight: bolder;
+	font-variant: normal;
+	background: gainsboro;
+}
+.home-a{
+	//text-decoration:none;
+	cursor:pointer; 
+}
+.home-menu{
+	width:200px;
+}
+#container-mentu{
+	position:absolute;
+	top: 250px;
+	left: 64px;
+}
+.iframe{
+	display:none;
+	width: 986px;
+	height: 470px;
+	position:absolute;
+	left: 382px;
+	top: 185px;
+}
+.form-input{
+	width:200px;
+}
+#time{
+	position:fixed;
+	top:50px;
+	right:10px;
+}
+#b4{
+	position:absolute;
+	top:21px;
+	right:259px;
+}
+#show-text{
+	 width:940px;
+	 height:450px;
+	 position:absolute;
+	 top:40px;
+}
+#update-div{
+	//display:none;
+	position:absolute;
+	top:20px;
+	left:20px;
+}
+.a-praise{
+	cursor: pointer;
+}
+#b2{
+	position:absolute;
+	top: 205px;
+	left: 382px;
+}
+#b3{
+	position:absolute;
+	top: 175px;
+	left: 299px;
+}
+#comment-form{
+	position:absolute;
+	top: 136px;
+	left: 455px;
+}
+#iframe-div{
+	position:absolute;
+	top: 14px;
+	left: 174px;
+}
+.prifile-div{
+	position:absolute;
+	top: 68px;
+	left: 57px;
+}
+.tihui{
+	position:absolute;
+	left: 132px;
+}
+#div-tihui{
+	float:left;
+}
+#b10{
+	position:absolute;
+	top: 370px;
+	left: 356px;
+}
+.input-text3{
+	width:200px;
+}
+.color-div{
+	background:lavender;
+	width:328px;
+}
+#student-add{
+	position:absolute;
+	top: 53px;
+	left: -24px;
+}
+#student-b3{
+	//position:absolute;
+	left:270px;
+}
+
+
